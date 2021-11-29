@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Photo-Gallery/static/css/main.2463ea87.chunk.css",
+    "main.js": "/Photo-Gallery/static/js/main.94558764.chunk.js",
+    "main.js.map": "/Photo-Gallery/static/js/main.94558764.chunk.js.map",
+    "runtime-main.js": "/Photo-Gallery/static/js/runtime-main.fd65c39b.js",
+    "runtime-main.js.map": "/Photo-Gallery/static/js/runtime-main.fd65c39b.js.map",
+    "static/js/2.42e66ff4.chunk.js": "/Photo-Gallery/static/js/2.42e66ff4.chunk.js",
+    "static/js/2.42e66ff4.chunk.js.map": "/Photo-Gallery/static/js/2.42e66ff4.chunk.js.map",
+    "static/js/3.8c7d4e10.chunk.js": "/Photo-Gallery/static/js/3.8c7d4e10.chunk.js",
+    "static/js/3.8c7d4e10.chunk.js.map": "/Photo-Gallery/static/js/3.8c7d4e10.chunk.js.map",
+    "index.html": "/Photo-Gallery/index.html",
+    "static/css/main.2463ea87.chunk.css.map": "/Photo-Gallery/static/css/main.2463ea87.chunk.css.map",
+    "static/js/2.42e66ff4.chunk.js.LICENSE.txt": "/Photo-Gallery/static/js/2.42e66ff4.chunk.js.LICENSE.txt",
+    "static/media/plus-circle-solid.6511bfea.svg": "/Photo-Gallery/static/media/plus-circle-solid.6511bfea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd65c39b.js",
+    "static/js/2.42e66ff4.chunk.js",
+    "static/css/main.2463ea87.chunk.css",
+    "static/js/main.94558764.chunk.js"
+  ]
+}
