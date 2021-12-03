@@ -5,14 +5,14 @@ import { ref, uploadBytes, getDownloadURL, listAll  } from "firebase/storage";
 import './App.css';
 import Overlay from './Overlay'
 import { ReactComponent as AddCircle} from './static/image/plus-circle-solid.svg'
+import Loading from './Loading'
 
 function App() {
 
   const [image,setImage] = useState(null)
-
-  const [gallery,setGallery] = useState([])
-
+  const [gallery,setGallery] = useState()
   const [isView,setIsView] = useState(false)
+
   function handleView(picture)
   {
     setIsView(picture)
@@ -41,7 +41,6 @@ function App() {
               .catch(err=>console.log(err))
           }
         })
-    
   },[])
   function handleSubmit(value)
   {
@@ -65,17 +64,18 @@ function App() {
           </div> 
         </form>
       </div>
+      {!gallery?<Loading/>:''}
       <div className='body'>
         
-          {gallery.map((picture,index)=>{
+          {gallery?gallery.map((picture,index)=>{
             return <div key={index}>
-                <img onClick={()=>handleView(picture)} src={picture} />
+                <img onClick={()=>handleView(picture)} src={picture} alt='img' />
               </div>
-          })}
+          }):''}
         {!!isView?
           <>
             <Overlay setIsView={setIsView}/>
-            <img className='viewImg' src={isView}/>
+            <img className='viewImg' src={isView} alt='img'/>
           </>
         :''}
       </div>
